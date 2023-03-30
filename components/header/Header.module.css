@@ -1,0 +1,38 @@
+.header {
+  margin: 16px 16px 0;
+}
+
+.figure {
+  align-items: center;
+  display: flex;
+  gap: 6px;
+  user-select: none;
+}
+
+.circle {
+  aspect-ratio: 1/1;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  width: 50px;
+}
+
+.circle::before {
+  content: "A";
+  color: aliceblue;
+  font-size: 3.2rem;
+  font-weight: bolder;
+  position: absolute;
+  top: calc(50% - 1.9rem);
+  left: calc(50% - 1.1rem);
+}
+
+.h2 {
+  color: #424242;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.h2 span {
+  font-weight: bolder;
+}

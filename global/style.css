@@ -1,0 +1,14 @@
+:root {
+  font-size: 62.5%;
+  --primary-color: #1776a9;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, figure, picture, textarea, input {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.2rem;
+}
