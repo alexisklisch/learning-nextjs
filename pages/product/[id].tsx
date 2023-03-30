@@ -1,5 +1,5 @@
 export const getStaticPaths = async (context) => {
-  const avo = await fetch(`http://localhost:3000/api/avo`)
+  const avo = await fetch(`https://learning-nextjs-coral-one.vercel.app/api/avo`)
   .then(res => res.json())
   .then(data => data.data)
 
@@ -18,7 +18,7 @@ export const getStaticPaths = async (context) => {
 export const getStaticProps = async ({params}) => {
   const { id } = params
 
-  const avo = await fetch(`http://localhost:3000/api/avo/${id}`)
+  const avo = await fetch(`https://learning-nextjs-coral-one.vercel.app/api/avo/${id}`)
   .then(res => res.json())
   .then(data => data.data)
 
