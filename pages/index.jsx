@@ -1,7 +1,7 @@
 import Link from "next/link"
 
 export const getStaticProps = async () => {
-  const avos = await fetch(`https://platzi-avo.vercel.app/api/avo`)
+  const avos = await fetch(`http://localhost:3000/api/avo`)
   .then(res => res.json())
   .then(data => data.data)
 
